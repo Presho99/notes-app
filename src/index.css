@@ -3,3 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.item-itself{
+  display: flex;
+ 
+}
+
+.item-icon{
+  cursor: pointer;
+}
+.show-btn{
+  cursor: pointer;
+}
