@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+/* Todo */
+
+.todo{
+  background-color: blueviolet;
+ 
+  padding: 2em;
+}
+
+.todo-title{
+  display: flex;
+  text-transform: uppercase;
+}
 .item-itself{
   display: flex;
  
@@ -15,3 +27,37 @@
 .show-btn{
   cursor: pointer;
 }
+
+/* Todo */
+
+
+
+/* Checkbox */
+.checkbox-wrapper{
+  background-color: aquamarine;
+}
+/* Checkbox */
+
+/* Affirmation */
+.affirmation{
+  background-color: darkblue;
+}
+/* Affirmation */
+
+/* Mood */
+.mood-itself img{
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+/* Mood */
+
+/* Popup */
+.popup-box{
+  width: 70%;
+  margin: 0 auto;
+  max-height: 70vh;
+  background-color: #fff;
+  
+}
+/* Popup */
