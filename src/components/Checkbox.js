@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-
+import "../index.css"
 
 function Checkbox({label}) {
     const [isChecked, setIsChecked] = useState(false)

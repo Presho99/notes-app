@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import "../index.css"
 
 function Affirmations() {
     const [data, setData] = useState(null);
@@ -18,7 +19,7 @@ function Affirmations() {
             })
     }, [])
     return (
-        <div className='affirmations'>
+        <div className='affirmation'>
             <h2>Today's affirmation</h2>
             <div className='affirmation-box'>
                 {loading && <p>Loading...</p>}
