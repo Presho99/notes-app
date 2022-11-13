@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Checkbox from './Checkbox'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMinus, faMinusCircle, faPlusCircle } from '@fortawesome/free-solid-svg-icons'
+import { faMinus, faMinusCircle, faPlusCircle, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import "../index.css"
 
 function Todo() {
@@ -46,6 +46,7 @@ function Todo() {
     // Todo body
     return (
         <div className='todo'>
+            <FontAwesomeIcon icon={faArrowLeft} className="back-arrow"/>
             {/* title */}
             <div className='todo-title'>
                 <h1>to-do</h1>
