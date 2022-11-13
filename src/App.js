@@ -2,8 +2,9 @@
 import './index.css';
 import Todo from './components/Todo';
 import Affirmations from './components/Affirmations';
-import Calendar from './components/Calendar';
+import Cal from './components/Cal';
 import Mood from './components/Mood';
+import Event from './components/Event';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <Todo/>
       <Affirmations/>
       <Mood/>
-      <Calendar/>
+      <Cal/>
+      <Event/>
     </div>
   );
 }
