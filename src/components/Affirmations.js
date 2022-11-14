@@ -25,7 +25,7 @@ function Affirmations() {
                 {loading && <p>Loading...</p>}
                 {!loading && data.map((info) => {
                     return(
-                        <li className='single'>{info.phrase}</li>
+                        <p className='single'>{info.phrase}</p>
                     )
                 })}
             </div>

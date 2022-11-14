@@ -101,6 +101,28 @@
 /* Affirmation */
 .affirmation{
   background-color: darkblue;
+  height: 100vh;
+  padding: 2em;
+}
+.affirmation h2{
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-size: 2em;
+}
+.affirmation-box{
+background-color: #A77ABF;
+width: 70%;
+padding: 1em;
+justify-content: center;
+align-items: center;
+margin: 100px auto;
+border-radius: 5px;
+}
+.affirmation-box .single{
+ font-size: 2em;
+ font-family: "Open Sans", sans-serif;
+ text-align: center;
+ font-weight: 600;
 }
 /* Affirmation */
 

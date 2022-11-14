@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { Calendar } from 'react-calendar'
-import Color from './Color'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faCheck, faClock, faLocationDot} from '@fortawesome/free-solid-svg-icons'
+import Palette from './Palette'
 
 function Event() {
     // state for dates
@@ -33,7 +34,7 @@ function Event() {
                                 </div>
                             </div>
                         </div>
-                        <Color/>
+                        <Palette/>
                         <div className='location'>
                             <FontAwesomeIcon icon={faLocationDot}/>
                             <input type="text" placeholder="Add location"/>
