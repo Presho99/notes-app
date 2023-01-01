@@ -4,6 +4,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* Home */
+.home{
+  height: 100vh;
+
+}
+/* Home */
 
 /* Todo */
 .back-arrow{
@@ -115,7 +121,7 @@ width: 70%;
 padding: 1em;
 justify-content: center;
 align-items: center;
-margin: 100px auto;
+margin: auto;
 border-radius: 5px;
 }
 .affirmation-box .single{
@@ -127,30 +133,101 @@ border-radius: 5px;
 /* Affirmation */
 
 /* Mood */
+.mood{
+  width: 100vw;
+  position: relative;
+ 
+}
+
+.mood-title{
+  font-size: 2em;
+  align-items: center;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 1em;
+  
+}
 .mood-itself img{
   width: 80px;
   height: 80px;
   cursor: pointer;
+  margin-left: 1em;
+}
+.mood-itself{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+ 
+}
+
+.mood-itself h3{
+  align-items: center;
+
+}
+.prompt{
+  align-items: center;
+}
+
+.prompt h2{
+  
+}
+
+.prompt-buttons{
+  margin-top: 1em;
+  justify-content: space-between;
+
+}
+
+.prompt-buttons button{
+  width: 6em;
+  padding: 0.9em;
+  text-align: center;
+  cursor: pointer;
+  margin-left: .2em;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  background-color: #A77ABF;
+  
 }
 /* Mood */
 
 /* Popup */
+.popup{
+ display: flex;
+ text-align: center;
+ 
+ 
+}
 .popup-box{
-  width: 70%;
-  margin: 0 auto;
-  max-height: 70vh;
-  background-color: #fff;
+  width: 15em;
+  background-color: #CCCDD5;
+  padding: 1em;
+  height: 10em;
+  z-index: 1;
+  position: absolute;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .9s ease-in;
+  font-family: "Oswald", sans-serif;
+  border-radius: 5px;
   
 }
 /* Popup */
-/* Calendar */
+/* react Calendar */
 .react-calendar {
-  width: 350px;
+  width: 100%;
   max-width: 100%;
   background: white;
   border: 1px solid #a0a096;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.125em;
+  border-bottom-right-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+  padding-bottom: 1.5em;
+  padding-top: 1.5em;
 }
 .react-calendar--doubleView {
   width: 700px;
@@ -187,6 +264,8 @@ border-radius: 5px;
 .react-calendar__navigation button {
   min-width: 44px;
   background: none;
+  font-family: "Oswald";
+  font-size: 1.3em;
 }
 .react-calendar__navigation button:disabled {
   background-color: #f0f0f0;
@@ -200,9 +279,11 @@ border-radius: 5px;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 0.75em;
+  
 }
 .react-calendar__month-view__weekdays__weekday {
   padding: 0.5em;
+  font-family: "Oswald";
 }
 .react-calendar__month-view__weekNumbers .react-calendar__tile {
   display: flex;
@@ -210,12 +291,18 @@ border-radius: 5px;
   justify-content: center;
   font-size: 0.75em;
   font-weight: bold;
+  
+
+ 
 }
 .react-calendar__month-view__days__day--weekend {
-  color: #d10000;
+  color: #A77ABF;
+  
 }
 .react-calendar__month-view__days__day--neighboringMonth {
   color: #757575;
+  
+ 
 }
 .react-calendar__year-view .react-calendar__tile,
 .react-calendar__decade-view .react-calendar__tile,
@@ -237,29 +324,197 @@ border-radius: 5px;
   background-color: #e6e6e6;
 }
 .react-calendar__tile--now {
-  background: #ffff76;
+  background: #CCCDD5;
+  color: #A77ABF;
 }
 .react-calendar__tile--now:enabled:hover,
 .react-calendar__tile--now:enabled:focus {
-  background: #ffffa9;
+  background: #CCCDD5;
+  color: #A77ABF;
 }
 .react-calendar__tile--hasActive {
-  background: #76baff;
+  background: #A77ABF;
 }
 .react-calendar__tile--hasActive:enabled:hover,
 .react-calendar__tile--hasActive:enabled:focus {
   background: #a9d4ff;
 }
 .react-calendar__tile--active {
-  background: #006edc;
+  background: #A77ABF;
   color: white;
 }
 .react-calendar__tile--active:enabled:hover,
 .react-calendar__tile--active:enabled:focus {
-  background: #1087ff;
+  background: #A77ABF;
 }
 .react-calendar--selectRange .react-calendar__tile--hover {
   background-color: #e6e6e6;
 }
 
-/* Calendar */
+/* react Calendar */
+
+/* calendar */
+.calendar{
+  min-height: 100vh;
+  /* background-color: #d10000; */
+
+}
+.text-center{
+
+  padding: 0.7em 1em;
+}
+.cal-dates{
+  display: flex;
+}
+.cal-dates-left{
+  display: flex;
+  flex-direction: column-reverse;
+  font-family: "Oswald";
+  width: 10%;
+ 
+  height: 5em;
+ 
+  
+}
+.cal-dates-left h3{
+  text-transform: uppercase;
+
+}
+.cal-dates-right{
+  
+ width: 80%;
+  margin-top: 0.9em;
+  margin-left: 1em;
+}
+
+.cal-dates-right h3{
+  font-family: "Oswald";
+}
+.cal-dates-right p{
+margin-top: 0.8em;
+font-family: "Open Sans", sans-serif;
+font-weight: 600;
+color: #CCCDD5;
+}
+.cal-right-line{
+  width: 100%;
+  height: 1px;
+  background-color: #CCCDD5;
+  margin-top: 1em;
+
+}
+.cal-right-event{
+  background-color: #006edc;
+  padding: 0.5em;
+  margin-top: 1em;
+  border-radius: 12px;
+}
+
+.cal-right-event h3{
+color: #fff;
+}
+
+.cal-right-event .time{
+  font-size: 0.8em;
+  font-weight: 400;
+  margin-bottom: 0.2em;
+}
+.cal-right-event .location{
+  font-size: 0.9em;
+  color: #fff;
+  margin-top: 0.3em;
+  font-weight: 500;
+}
+/* calendar */
+
+/* Event */
+.event{
+  min-height: 100vh;
+}
+.event-time{
+  display: flex;
+  
+}
+.fa-clock{
+  width: 20%;
+  font-size: 1.5em;
+  color: #A77ABF;
+}
+.set-time{
+  width: 80%;
+  
+  font-family: "Open Sans";
+ 
+}
+
+.set-time-start{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.set-time-start p{
+  /* margin-right: 13em; */
+  color: #A77ABF;
+  font-weight: 500;
+}
+.event-time .repeat{
+  display: flex;
+  justify-content: space-between;
+}
+
+.repeat p.par{
+  color: #A77ABF;
+  font-weight: 500;
+}
+
+.form-event .first-input{
+  width: 100%;
+  padding: 1.2em;
+  font-size: 1.1em;
+  border: none;
+  outline: none;
+}
+
+.form-event .first-input::placeholder{
+  font-size: 1.3em;
+  font-family: "Open Sans";
+  font-weight: 600;
+  
+}
+
+.form-event .location{
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.location-icon{
+  width: 20%;
+  color: #A77ABF;
+  font-size: 1.5em;
+}
+
+.location input{
+  padding: 0.5em 0.5em 0.5em 0.2em;
+  outline: none;
+  border: none;
+}
+
+.location input::placeholder{
+  font-size: 1.2em;
+  font-family: "Open Sans";
+  color: #A77ABF;
+  font-weight: 500;
+}
+
+button .event-btn{
+  width: 4em;
+  display: flex;
+}
+/* Event */
+
+/* Palette */
+.palette{
+  background-color: #006edc;
+}
+/* Palette */
